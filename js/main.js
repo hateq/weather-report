@@ -20,7 +20,7 @@ function showUserCard () {
 		const response = await fetch(geoApiUrl);
 		const data = await response.json();
 		let userCity = data.city;
-	const urlCity = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${userCity}`;
+	const urlCity = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${userCity}`;
 			const result = await fetch(urlCity);
 			const userData = await result.json();
 			showCard(userData);
