@@ -117,7 +117,7 @@ showUserCard();
 form.addEventListener('submit', async (event) => {
 	event.preventDefault();
 	async function getweather() {
-		const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+		const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 		const response = await fetch(url);
 		const data = await response.json();
 		return data;
