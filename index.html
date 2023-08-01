@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Weather report</title>
+</head>
+<body>
+	<header class="header">
+		
+		<h1 class="title">Прогноз погоды</h1>
+		<form class="form">
+			<input type="text" placeholder='Введите название городa' class="input">
+			<button class="button">Показать</button>
+		</form>
+		<div class="textbox">
+			<div class="temp-switch switch">
+				°C <span></span> °F
+			</div>
+			
+			<div class="lang-switch switch">
+				Ru <span></span> En
+			</div>
+		</div>
+	</header>
+	<div class="card user-city">
+			Разрешите доступ к местоположению чтобы увидеть погоду в вашем городе
+	</div>
+		<footer class="footer">
+				<a target='_blank' href="https://github.com/hateq" class="footer-title">
+					<h4 class="footer-title">GITHUB HATEQ</h4>
+				</a>
+		</footer>
+		
+		<script src='./js/conditions.js'></script>
+	<script src='./js/main.js'></script>
+</body>
+</html>
